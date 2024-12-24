@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #333333;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20%;
+            color: white;
+        }
+        p {
+            text-align: center;
+            display: block;
+            color: white;
+            opacity: 1; /* Initial opacity */
+            transition: opacity 3s ease-in-out; /* Transition effect */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('p').style.opacity = 0;
+            }, 2000); // 2 seconds delay
+        };
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome {{username}}!</h1>
+        <p>Thanks for signing in!</p>
+    </div>
+</body>
+</html>
